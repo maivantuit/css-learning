@@ -1,0 +1,43 @@
+/*
+h1{
+	font-weight: bold;
+	color: green;
+}
+=> đây là vùng chọn theo kiểu tên thẻ, comment lại để demo các vùng chọn tiếp theo
+*/
+
+/*
+#tieu-de{
+	font-weight: bold;
+	color: red;
+}
+=> đây là vùng chọn theo id, 1 id có thể tương ứng với 1 thẻ và không trùng nhau.
+(comment lại để demo các vùng chọn tiếp theo)
+*/
+/*
+.tieu-de{
+	font-weight: bold;
+	color: red;
+}
+=> đây là vùng chọn kiểu class.
+	1. Các class có tên tieu-de đều bị đổi màu theo css tương ứng.	
+*/
+
+/*
+#menu ul li {
+	background: red;
+	color: white;
+}
+=> đây là vùng chọn thứ cấp, bắt đầu là id dấu "#" lần lượt là các thẻ con ul li của nó.
+
+*/
+#menu ul ul > p{
+	background: red;
+	color: white;
+}
+/*
+  Đây là vùng chọn thứ cấp liền nhau. Vẫn chưa hình dung được, tất nhiên.
+  Cuối series thì sẽ cụ thể hơn. tiếp nhé.
+  Dấu "">": nó chỉ chọn thẻ <p> còn thẻ <p>Không đuuợc chọn nó không chọn</p>
+*/
+

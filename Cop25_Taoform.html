@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Create</title>
+	<meta charset="utf-8">	
+	<style type="text/css">
+		body{
+
+		}
+		form{
+			width: 600px;
+			margin: 40px auto;
+		}
+		fieldset{
+			background: violet;
+			font-size: 1.4em;
+			font-weight: bold;
+
+		}
+		form div{
+			margin: 0px 0px 5px 0px;
+			font-size: 1.2em;			
+		}
+		legend{
+			font-size: 1em;
+			margin: 0px 0px 10px 0px;			
+		}
+		label{
+			width: 100px;
+			display: block;
+			float: left;
+			clear: left;
+			line-height: 1em;
+		}
+	</style>
+		
+</head>
+<body>
+	<div>
+		<form id="form" action="">
+			<fieldset>
+				<legend>User</legend>
+				<div>
+					<label>Name</label>
+					<input id="name" type="" name="">
+				</div>
+				<div>
+					<label>Email</label>
+					<input id="email" type="" name="">
+					<label>
+						<input type="checkbox" name=""/>
+						Send me an email when there is update
+					</label>
+				</div>
+				<div>
+					<label>Website</label>
+					<input id="url" type="" name="">
+				</div>
+				<div>
+					<label>Group</label>
+					<select id="group">
+						<option value="1">Member</option>
+						<option value="1">Attribute</option>
+						<option value="1">Uploader</option>
+					</select> 
+				</div>
+				<div>
+					<label>Message</label>
+					<textarea id="message"cols="50" rows="10">
+						
+					</textarea>
+				</div>	
+				<div>
+					<input class="button" type="submit" name="" value="Save Changes">
+				</div>	
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html><!--Comment here-->
+<html lang="vi">
+	<head>
+		<title>trang tri list-style</title><!--tiêu đề-->
+		<meta charset="utf-8"/><!--website sử dụng tiếng việt-->		
+		<style type="text/css">	
+			body{
+				font-family: sans-serif;
+				font-size: 15px;
+			}
+			#menu ul{
+				background: #8ad385;
+				width: 250px;
+				padding: 0; /*Bỏ icon danh sách*/
+				list-style-type: none;
+			}
+			#menu ul li{
+				width: auto; /*Căn theo nội dung*/
+				height: 40px;
+				line-height: 40px; /*Căn giữa*/
+				border-bottom: 1px solid #e8e8e8;
+				padding: 0 1em;
+				position: relative;
+			}
+			#menu ul li a{
+				text-decoration: none;
+				color: #333;
+				font-weight: bold; /*Đậm lên*/
+				display: block;
+			}
+			#menu ul li:hover{
+				background: #CDE2CD;
+
+			}
+			#menu .sub-menu2{
+				position: absolute;
+				left: 250px;
+				top: 0px; /*ngang hàng với item2*/
+				display: none;
+			}
+			#menu ul li:hover .sub-menu2{
+				display: block;
+			}
+		</style>
+		<!-- 
+			1. div#menu>ul>li*5>a["#"] + table hiển thị ra:
+
+			<div id="menu">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+
+		-->
+	</head>
+	<body>	
+		<div id="menu">
+			<ul>
+				<li><a href="#">Item 1</a></li>
+				<li>
+					<a href="#">Item 2</a>
+					<ul class="sub-menu2">
+						<li><a href="#">Item-sub 1</a></li>
+						<li><a href="#">Item-sub 2</a></li>
+						<li><a href="#">Item-sub 3</a></li>
+						<li><a href="#">Item-sub 4</a></li>	
+					</ul>
+				</li>
+				<li><a href="#">Item 3</a></li>
+				<li><a href="#">Item 4</a></li>
+				<li><a href="#">Item 5</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

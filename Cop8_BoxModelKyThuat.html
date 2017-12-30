@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS - Kỷ thuật Box Model Cơ Bản</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 150px;
+			height: 150px;
+		}
+		#box1{
+			background-color: green;			
+		}
+		#box2{
+			background-color: blue;
+			
+			margin: 32px;
+			border: 5px solid yellow;
+			padding: 45px;			
+		}
+		/*
+		1. Margin (lề): có 4 giá trị:( thứ 1:Top) 2, (thứ 2:right), (thứ 3:left), (thứ 4:bottom).
+			- Nếu chỉ thêm 1 giá trị thui: margin-top: 32px;
+			- Nếu thêm margin 4 giá trị bằng nhau: margin: 32px;
+			- Hoặc margin: 32px 15px; (lề top và bottom = 32px, lề left and right = 15px)
+			- Hoặc margin: 32px là tất cả 4 hướng đều là 32px
+		2. border (viền): có 3 giá trị:
+			- thứ 1: 5px là độ dày của border đó.
+			- thứ 2: solid là style của đường viền đó, CSS hổ trợ nhiều đường viền khác nhau (dotted, double, groove, inset, outset,..)
+			- thứ 3: Yellow là giá trị màu sắc của border 
+		3. padding (sự đệm, lót vào): nó có các giá trị trương tự như margin và các điều kiện kèm theo.
+		4. Ta có thể thay đổi trực tiếp bên trong website, bằng cách vào trình duyệt chạy box đó, click chuột phải => inspect element => layout. để tinh chỉnh lại. Lưu ý: Khi thay đổi ở đây code trong đó sẽ không bị thay đổi, như vậy bạn cần phải thay đổi cả 2 bên cùng 1 lần.
+		*/
+	</style>
+</head>
+<body>
+	<div id="box1">Box 1</div>
+	<div id="box2">Box 2</div>
+</body>
+</html>

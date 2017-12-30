@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS - Float và Clear Float</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.container{
+			width: 960px;	
+			height: auto;
+			margin: 0 auto; /*Để chạy ra ngoài giữa*/
+			border: 2px solid black;
+			padding: 2em;
+		}
+		#content{
+			overflow: auto;
+		}
+		#post{
+			background-color: blue;			
+			width: 560px;
+			height: 300px;
+			float: left;
+		}
+		#sidebar{
+			background-color: yellow;
+			width: 400px;
+			height: 300px;
+			float: right;
+		}
+		/*
+		.clear{
+			clear: both;
+		}
+		*/
+		/*
+			1. khi sử dụng float: left, right. nó sẽ nhảy ra vùng container chứa 2 thẻ <div> đó. Vậy làm sao để nó không nhảy ra mà nằm trong khu vực của mẹ nó container
+			2. Đó là thêm 1 thẻ <div class="clear"> nữa và thêm thuộc tính clear: both (comment lại cách 1 này, ta sang cách 2)
+			3. Cách 2: đến phần tử mẹ. id="content" và làm như sau:
+			#content{
+			overflow: auto;
+			}
+			4. Ngoài ra còn nhiều cách nữa, nhưng 2 cách là đủ để làm trường hợp phần tử con nhảy ra vùng phần tử mẹ.
+		*/		
+	</style>
+</head>
+<body>
+	<div id="content" class="container">
+		<div id="post">Nội dung post</div>
+		<div id="sidebar">Nội dung sidebar</div>
+		<!--<div class="clear"></div>		-->
+	</div>
+	<div></div>
+	<div></div>
+</body>
+</html>

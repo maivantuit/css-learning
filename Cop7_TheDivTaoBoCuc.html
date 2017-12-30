@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS- Thẻ tạo bố cục div</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			width: 960px;
+			margin: 0 auto; /*Căn ra giữa*/
+			font-family: Arial;
+			font-size: 16px;
+			color: white; /*Color: màu chữ*/
+		}
+
+		#header{
+			background-color: #333;
+			padding: 10px 25px;
+		}
+		
+		#content{
+			background-color: #555;
+			width: 596px;
+			float: left;
+			padding: 16px;
+		}
+		#sidebar{
+			background-color: #444;
+			width: 300px;
+			float: right;
+			padding: 1em;
+		}
+		#footer{
+			clear: both; /*Để không cho float tràn xuống dưới */
+			background-color: #666;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Cop Instagr Blog</h1>
+		<p>Web Developer</p>
+	</div>
+
+	<div id ="content">
+		<p>Nội dụng website</p>
+	</div>
+
+	<div id="sidebar">
+		<p>Đây là Sidebar</p>
+	</div>
+	
+	<div id="footer">
+		<p>&copy; Cop Instagr Blog</p>
+	</div>
+
+</body>
+</html>

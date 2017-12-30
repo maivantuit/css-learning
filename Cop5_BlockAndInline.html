@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS- Block and Inline</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.general{
+			background: blue;
+			color: white;
+			padding: 25px;
+			margin-bottom: 3em;
+			/*Thay đổi về kích thước, các phần tử inline sẽ không bị thay đổi, nó phụ thuộc vào nội dung bên trong*/
+			width: 100px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="general">Đây là phần tử block 1</div>
+	<div class="general">Đây là phần tử block 2</div>
+	
+	<span class="general">Đây là phần tử inline 1</span>
+	<span class="general">Đây là phần tử inline 2</span>
+	<!--
+	1. Nhìn vào kết quả cho ta thấy, các phần tử là các thẻ block (<div> trên) 1 <div> sẽ có 1 hàng riêng biệt, và nó tự động xuống dòng.
+	2. Các phần tử là các thẻ inline (<span> trên), 1 thẻ <span> nó không tự động xuống dòng. nó nằm cùng trên 1 hàng (dòng).
+	=> đó là sự khác nhau của inline và block.
+	3. Khác biệt đáng chú ý: khi thay đổi giá trị kích thước của các thẻ. Thì các phần tử là thẻ block được áp dụng, bị thay đổi, còn các phần tử là thẻ inline thì không thay đổi và nó phụ thuộc vào nội dung bên trong.
+	=> Vậy làm sao chuyển các phần tử block sang inline và ngược lại. Đó là thuộc tính display. Tiếp nhé
+	-->
+</body>
+</html>

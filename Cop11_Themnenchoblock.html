@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS- Thêm nền cho block</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			background-color: blue;
+			background-image: url('hinh1.jpg'),url('hinh2.jpg');
+			width: 1200px;
+			height: 500px;
+			color: white;
+			padding: 55px;
+			background-repeat: no-repeat;
+			background-position: top center,center;
+			background-size: 300px,400px;
+			
+		}
+		/*
+			1. thuộc tính background-color: là màu nền, có các giá trị là tên màu hoặc mã màu.
+			2. Thuộc tính background-image: là ảnh dùng làm nền, có giá trị là url('path hình'). Có thể thêm nhiều hình: url('hinh1.jpg'),url('hinh2.jpg').
+			3. thuộc tính background-repeat: dùng để lặp hình nền
+				- no-repeat: không lặp lại các hình.
+				- repeat-x: lặp trên trục x.
+				- repeat-y: lặp trên trục y.
+				- space: có lặp, ngăn cách các hình là khoảng trắng 
+				- round: theo mình thấy, nó giống như space.
+			4. thuộc tính background-position (possition: đặt vào vị trí): dùng để đặt vị trí các hình. Có 2 biến giá trị
+				-	top/left/bottom/center , center/left/bottom/rigt.
+				- 	tương ứng với các hình
+			
+		*/
+	</style>
+</head>
+<body>
+	<div><h1>Welcome to</h1></div>
+</body>
+</html>

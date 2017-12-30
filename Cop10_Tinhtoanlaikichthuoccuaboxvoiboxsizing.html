@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học CSS - Tính toán lại kích thước của box với box-sizing</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		div{
+			width: 500px;
+			height: 500px;
+			padding: 20px;
+			background-color: blue;
+			border: 5px solid black;
+			box-sizing:padding-box;
+
+		}
+		/*
+		1. Ta đã khai báo chiều dài và chiều rộng cùng là 500px. Khi thêm padding: 20px hoặc border: 5px solid black thì kích thước box (500x500) hiện tại tăng lên là (550x550), trong đó (20x2) là của padding và (5x2) là của border.(Quy về chiều rộng hoặc chiều dài). Có thể kiểm chứng: Trình duyệt => click phải => Inspect element, check.
+		2. Vậy làm sao để kích thước box khi thêm các thuộc tính như: margin, border, padding nó sẽ không bị thay đổi. Nghĩa là box bao gồm border, padding. (margin nó không tính vào box nhé)
+		3. Sử dụng thuộc tính box-sizing: 
+			- giá trị thứ 1 mặc định là content-box: kích thước box như trên, bị thay đổi
+			- giá trị border-box: kích thước box tính luôn border, padding phần content giảm là (450x450). Nhưng kích thước box không thay đổi. Nếu thêm padding 100px thì phần content là (250x250)
+			- giá trị padding-box: kích thước box bao gồm padding, không tính border.
+		4. Khi code: Khuyến khích áp dụng cho tất cả phần tử trong html
+		*{
+			box-sizing: border-box;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+			1. *: áp dụng cho tất cả
+			2. Trong CSS3 thì có thêm 2 thuộc tính 
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+
+		*/
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
